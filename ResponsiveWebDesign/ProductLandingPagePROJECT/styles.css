@@ -1,0 +1,257 @@
+:root {
+    --cream: #F1EEE9;
+    --burgundy: #780000;
+    --dark-burgundy: #4C0000;
+    --dark-gray: #343A40;
+    --monsieur: 'Monsieur La Doulaise', serif;
+    --nautigal: 'The Nautigal', serif;
+    --gideon: 'Gideon Roman', serif;
+    --inter: 'Inter', serif;
+} 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px*/
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cream);
+    padding: 10px 5px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    width: 80px;
+}
+
+.logo-text{
+    font-family: var(--gideon);
+    font-size: 3rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    color: var(--burgundy);
+    margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--burgundy);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    list-style-type: none;
+    width: 100%;
+    padding: 0 15px;
+    
+    
+}
+
+#nav-bar { 
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-right: 50px;
+    font-family: var(--inter);
+    font-weight: 500;
+}
+
+#home {
+    top: 0;
+    background-image: url("./assets/image-adjust.png");
+}
+
+#manifest {
+    background-image: url("./assets/letter.png");
+}
+
+#for-you {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cream);
+    align-items: center;
+    
+    width: 100%;
+    height: 100vh;
+
+}
+
+#footer {
+    background-image: url("./assets/foo.jpg");
+    height: 50vh;
+}
+
+.section-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+}
+
+
+.title {
+    color: var(--cream);
+    font-size: 5rem;
+    font-family: var(--gideon);
+    font-weight: 400;
+    margin: 200px 0 20px;
+    
+}
+
+.subtitle {
+    margin-top: 50px;
+    font-size: 1.8rem;
+    line-height: 32px;
+}
+
+.cursive {
+    font-family: var(--nautigal);
+    font-size: 8rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.cursive-big {
+    font-size: 10rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#email {
+    width: 40%;
+    height: 65px;
+    padding: 20px;
+    border: 1px solid var(--cream);
+    border-radius: 30px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+#email:focus {
+    border: 1px solid var(--burgundy);
+}
+
+#submit {
+    width: 15%;
+    height: 50px;
+    border: 1px solid var(--cream);
+    border-radius: 30px;
+    background-color: var(--cream);
+    color: var(--burgundy);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: var(--burgundy);
+    border: 1px solid var(--burgundy);
+    color: var(--cream);
+}
+
+iframe {
+    width: 800px;
+    height: 450px;
+    border: 1px solid var(--dark-burgundy);
+    border-radius: 25px;
+}
+
+.img-1 {
+    width: 550px;
+    height: 590px;
+    object-fit: cover;
+    border: 1px solid var(--dark-gray);
+    margin: 0 150px 0 190px;
+}
+
+article {
+    margin-right: 100px;
+}
+
+.for-you-title {
+    font-family: var(--gideon);
+    font-size: 8rem;
+    font-weight: 200;
+    color: var(--black);
+    line-height: 58px;
+    margin-top: -100px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #nav-bar { 
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        margin-right: 10px;
+        font-family: var(--inter);
+        font-weight: 500;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        color: var(--burgundy);
+        margin-left: 10px;
+    }
+
+    #email {
+        width: 60%;
+    }
+
+    #submit {
+        width: 45%;
+    }
+}
+
+/* @media only screen and (max-width: 900px) {
+    
+}
+
+@media only screen and (max-width: 550px) {
+    
+    
+
+}
+
+@media only screen and (max-width: 420px) {
+    
+} */
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product Landing Page</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monsieur+La+Doulaise&family=The+Nautigal:wght@400;700&display=swap">
+    </head>
+    <body>
+        <header id="header">
+            <div class="logo-container">
+                <img
+                    id="header-img"
+                    src="./assets/logo.png"
+                    alt="logo"
+                    class="logo"
+                />
+                <h1 class="logo-text">girls club</h1>
+            </div>
+            
+            <nav id="nav-bar">
+                <ul class="nav-links">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#manifest">MANIFEST</a></li>
+                    <li><a href="#for-you">FOR YOU</a></li>                                        
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="section-align">
+                <h1 class="title">wanna join the club?</h1>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input  
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                    />
+                    <input
+                        type="submit"
+                        id="submit"
+                        value="Get Started"
+                    />
+                </form>
+            </section>
+            <section id="manifest" class="section-align">
+                <h1 class="title">manifest your <span class="cursive">dream</span></h1>
+                <iframe 
+                    id="video"
+                    src="https://www.youtube.com/embed/_TYXzd6_fP8?si=5eyNbo7hpVeCNxLN" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </section>
+            <section id="for-you">
+                <aside>
+                    <img 
+                        src="./assets/flower.jpg"
+                        alt="flower"
+                        class="img-1"
+                    />
+                </aside>
+                <article>
+                    <h2 class="for-you-title">
+                        I <span class="cursive cursive-big">dare you</span> <br />
+                        TO INVEST <br />
+                        IN <span class="cursive cursive-big">Yourself</span>
+                    
+                    </h2>
+                    <p class="subtitle">
+                        There is not better time than now, <br />
+                        What are you waiting for?
+                    </p>
+                    </article>
+            </section>
+            <section id="footer" class="section-align">
+
+            </section>
+        </main>
+    </body>
+</html>
