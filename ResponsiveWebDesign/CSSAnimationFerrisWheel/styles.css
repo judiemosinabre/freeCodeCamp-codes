@@ -1,0 +1,147 @@
+.wheel {
+    position: absolute;
+    height: 55vw;
+    width: 55vw;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 50px;
+    max-height: 500px;
+    max-width: 500px;
+
+    animation-name: wheel;
+    animation-duration: 10s;
+
+    /* infinite */
+    animation-iteration-count: infinite;
+    
+    /* same rate from start to finish */
+    animation-timing-function: linear;
+}
+
+.line {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: yellow;
+    width: 50%;
+    height: 2px;
+
+    /* This will offset the origin point by 0% from the left and 0% from the top,
+        setting it to the top left corner of the element. */
+    transform-origin: 0% 0%; 
+}
+
+/* second line */
+.line:nth-of-type(2) {
+    /* The rotate(60deg) value will rotate 
+        the element around its transform-origin point by 60 degrees clockwise. */
+    transform: rotate(60deg);
+}
+
+/* third line */
+.line:nth-of-type(3) {
+    transform: rotate(120deg);
+}
+
+/* fourth line */
+.line:nth-of-type(4) {
+    transform: rotate(180deg);
+}
+
+/* fifth line */
+.line:nth-of-type(5) {
+    transform: rotate(240deg);
+}
+
+/* sixth line */
+.line:nth-of-type(6) {
+    transform: rotate(300deg);
+}
+
+.cabin {
+    position: absolute;
+    border: 2px solid;
+    background-color: red;
+    width: 20%;
+    height: 20%;
+    /* 0 from the top and 50 from the left */
+    transform-origin: 50% 0%;
+
+    /* animation-name, animation-duration, animation-timing, animation-iteration-count */
+    animation: cabins 10s ease-in-out infinite;
+}
+
+/* first cabin */
+.cabin:nth-of-type(1) {
+    right: -8.5%;
+    top: 50%;
+}
+
+/* second cabin */
+.cabin:nth-of-type(2) {
+    right: 17%;
+    top: 93.5%;
+}
+
+/* third cabin */
+.cabin:nth-of-type(3) {
+    right: 67%;
+    top: 93.5%;
+}
+
+/* fourth cabin */
+.cabin:nth-of-type(4) {
+    left: -8.5%;
+    top: 50%;
+}
+
+/* fifth cabin */
+.cabin:nth-of-type(5) {
+    left: 17%;
+    top: 7%;
+}
+
+/* sixth cabin */
+.cabin:nth-of-type(6) {
+    right: 17%;
+    top: 7%;
+}
+
+/* keyframes - css animation 
+wheel - kf name */
+@keyframes wheel {
+    /* start */
+    0% {
+        transform: rotate(0deg);
+    }
+
+    /* end = full rotation*/
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cabins {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: purple;
+    }
+
+    75% {
+        background-color: blue;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+
